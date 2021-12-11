@@ -40,4 +40,49 @@ public class StudentEntity {
         this.email = email;
         this.subject = subject;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public StudentEntity setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public StudentEntity setSurname(String surname) {
+        this.surname = surname;
+        return this;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public StudentEntity setAge(int age) {
+        this.age = age;
+        return this;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public StudentEntity setEmail(String email) {
+        this.email = email;
+        return this;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public StudentEntity setSubject(String subject) {
+        this.subject = subject;
+        return this;
+    }
 }

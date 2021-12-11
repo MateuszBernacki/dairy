@@ -1,4 +1,4 @@
-package com.example.teacher_student.dairy;
+package com.example.teacher_student.dairy.controller;
 
 import com.example.teacher_student.dairy.entity.StudentEntity;
 import org.springframework.stereotype.Controller;

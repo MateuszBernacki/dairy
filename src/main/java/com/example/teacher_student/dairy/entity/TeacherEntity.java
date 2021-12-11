@@ -40,4 +40,49 @@ public class TeacherEntity {
         this.email = email;
         this.specialization = specialization;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public TeacherEntity setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public TeacherEntity setSurname(String surname) {
+        this.surname = surname;
+        return this;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public TeacherEntity setAge(int age) {
+        this.age = age;
+        return this;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public TeacherEntity setEmail(String email) {
+        this.email = email;
+        return this;
+    }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public TeacherEntity setSpecialization(String specialization) {
+        this.specialization = specialization;
+        return this;
+    }
 }
