@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TeacherRepository extends JpaRepository<TeacherEntity, String>, JpaSpecificationExecutor<TeacherEntity> {
-    TeacherEntity findAllByNameAndUsername(String name, String surname);
+    TeacherEntity findAllById(Long id);
 }

@@ -21,12 +21,12 @@ public class StudentService {
         return StudentMapper.map(students);
     }
 
-    public UserDTO getStudent() {
-        StudentEntity student = studentRepository.findAllByNameAndUsername(getStudent().getName(), getStudent().getSurname());
+    public UserDTO getStudent(Long id) {
+        StudentEntity student = studentRepository.findAllById(id);
         return StudentMapper.map(student);
     }
 
-    public UserDTO create(UserForm form) {
+    public UserDTO createStudent(UserForm form) {
         StudentEntity student = new StudentEntity()
                 .setName(form.getName())
                 .setSurname(form.getSurname())
@@ -39,13 +39,13 @@ public class StudentService {
         return StudentMapper.map(entity);
     }
 
-    public UserDTO update(StudentEntity entity){
+    public UserDTO updateStudent(StudentEntity entity){
 StudentEntity student = studentRepository.saveAndFlush(entity);
 return StudentMapper.map(student);
     }
 
-    public void delat(int id){
-studentRepository.deleteById(id);
+    public void deleteStudent(Long id){
+studentRepository.deleteById(String.valueOf(id));
     }
 
 

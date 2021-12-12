@@ -85,4 +85,10 @@ public class StudentEntity {
         this.subject = subject;
         return this;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+
 }

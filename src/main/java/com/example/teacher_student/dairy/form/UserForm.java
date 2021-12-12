@@ -48,4 +48,34 @@ public class UserForm {
     public String getSpecialization() {
         return specialization;
     }
+
+    public UserForm setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public UserForm setSurname(String surname) {
+        this.surname = surname;
+        return this;
+    }
+
+    public UserForm setAge(int age) {
+        this.age = age;
+        return this;
+    }
+
+    public UserForm setEmail(String email) {
+        this.email = email;
+        return this;
+    }
+
+    public UserForm setSubject(String subject) {
+        this.subject = subject;
+        return this;
+    }
+
+    public UserForm setSpecialization(String specialization) {
+        this.specialization = specialization;
+        return this;
+    }
 }

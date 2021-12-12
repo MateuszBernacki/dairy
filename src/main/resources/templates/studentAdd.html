@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+<body>
+<div>
+    <h1>Student Registration</h1>
+    <form th:action="@{/student}" method="post">
+
+        <div class="form-group">
+            <label for="name">name</label>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Enter name" autofocus />
+        </div>
+
+        <div class="form-group">
+            <label for="surname">Surname</label>
+            <input class="form-control" type="text" id="surname" name="surname" placeholder="Enter surname" autofocus />
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input class="form-control" type="number" id="age" name="age" placeholder="Enter age" autofocus />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="text" id="email" name="email" placeholder="Enter email" autofocus />
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input class="form-control" type="text" id="subject" name="subject" placeholder="Enter subject" autofocus />
+        </div>
+
+<!--        <label>Name:</label>-->
+<!--        <input type="text" th:field="*{name}"/><br/>-->
+
+<!--        <label>Surname:</label>-->
+<!--        <input type="text" th:field="*{surname}"/><br/>-->
+
+<!--        <label>Age:</label>-->
+<!--        <input type="text" th:field="*{age}"/><br/>-->
+
+<!--        <label>E-mail:</label>-->
+<!--        <input type="text" th:field="*{email}"/><br/>-->
+
+<!--        <label>Subject:</label>-->
+<!--        <input type="text" th:field="*{subject}"/><br/>-->
+
+
+        <button type="submit">Add Student</button>
+    </form>
+</div>
+</body>

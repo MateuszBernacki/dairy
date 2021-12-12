@@ -85,4 +85,8 @@ public class TeacherEntity {
         this.specialization = specialization;
         return this;
     }
+
+    public Long getId() {
+        return id;
+    }
 }

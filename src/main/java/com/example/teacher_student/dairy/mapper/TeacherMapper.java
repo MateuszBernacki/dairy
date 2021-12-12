@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class TeacherMapper {
 
-    private static UserDTO map(TeacherEntity entity) {
+    public static UserDTO map(TeacherEntity entity) {
         return new UserDTO()
                 .setName(entity.getName())
                 .setSurname(entity.getSurname())
@@ -17,7 +17,7 @@ public class TeacherMapper {
                 .setSpecialization(entity.getSpecialization());
     }
 
-    private static List<UserDTO> map(List<TeacherEntity> entities) {
+    public static List<UserDTO> map(List<TeacherEntity> entities) {
         return entities.stream().map(TeacherMapper::map)
                 .collect(Collectors.toList());
     }
